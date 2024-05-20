@@ -1,0 +1,103 @@
+import java.util.Scanner;
+
+public class Calculator{
+    //Methods and code to call goes here
+    int out;
+    public Calculator(){//Constructor
+        int num1=0;
+        int num2=0;
+        Boolean Add=false;
+        Boolean Sub=false;
+        Boolean Mult=false;
+        Boolean Div=false;
+        Boolean Pow=false;
+        String operator="";
+        int out=0;
+    }
+    public static int Addition(int num1, int num2){
+         //out=num1+num2;
+         //return out;
+         System.out.println(num1+num2);
+         return 1;
+    }
+    
+    public static int Subtraction(int num1, int num2){
+        //out = num1-num2;
+        //return out;
+        System.out.println(num1-num2);
+        return 1;
+    }
+    
+    public static int Multiplication(int num1, int num2){
+        //out = num1*num2;
+        //return out;
+        System.out.println(num1*num2);
+        return 1;
+    }
+    
+    public static int Division(int num1, int num2){
+        //out = num1/num2;
+        //return out
+        System.out.println(num1/num2);
+        return 1;
+    }
+    
+    public static int Power(int num1, int num2){
+        System.out.println(num1^num2);
+        return 1;
+    }
+    
+    public static void main(Boolean Add, Boolean Sub, Boolean Mult, Boolean Div, Boolean Pow){//Code to run goes here
+    //public static void main(String[]args){
+        Scanner Operand1 = new Scanner(System.in);
+        System.out.println("Enter First Operand: ");
+        int operand1 = Operand1.nextInt();
+        
+        Scanner Operator = new Scanner(System.in);
+        System.out.println("Enter Operand: ");
+        String operator = Operator.nextLine();
+        
+        Scanner Operand2 = new Scanner(System.in);
+        System.out.println("Enter Second Operand: ");
+        int operand2 = Operand2.nextInt();
+        // operand1
+        // operator
+        // operand2
+        
+        if (operator=="+"){
+            Add=true;
+        }
+        
+        if (operator=="-"){
+            Sub=true;
+        }
+        
+        if (operator=="*"){
+            Mult=true;
+        }
+        
+        if(operator=="/"){
+            Div=true;
+        }
+        
+        if(Add==true){
+            Addition(operand1, operand2);
+        }
+        
+        if(Sub==true){
+            Subtraction(operand1, operand2);
+        }
+        
+        if(Div==true){
+            Division(operand1, operand2);
+        }
+        
+        if(Mult==true){
+            Multiplication(operand1, operand2);
+        }
+        
+        if(Pow==true){
+            Power(operand1, operand2);
+        }
+    }
+}
