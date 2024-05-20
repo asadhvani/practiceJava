@@ -1,0 +1,31 @@
+//Practice encapsulation and inner classes
+//import java.util.Scanner;
+public class Person{
+
+    public Person(){
+        String name = "Joe";
+        String favColor = "Blue";
+        int luckyNum = 7;
+    }
+    private String bday = "5-20-2024";
+    private class PrivateInfo{
+        String pwd = "12345";
+        //public void ShowPwd(){
+            //System.out.println(pwd);
+        //}
+        //PrivateInfo mypwd = new PrivateInfo();
+    }
+    
+    public String getBday(){
+        return bday;
+    }
+    
+    public static void main(String[]args){
+        Person bday = new Person();
+        System.out.println(bday.bday);
+        Person myPerson = new Person();
+        //Scanner myInput = new Scanner(System.in);
+        //System.out.println("Do you want to see your password");
+        //String yesno = myInput.nextLine();
+    }
+}
