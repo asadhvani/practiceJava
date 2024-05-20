@@ -1,0 +1,45 @@
+//Public classes are accessible by another class
+//Private classes are only accessible within the declared class
+//Static means that attributes and methods belong to the class rather than an object
+public class ClassOne{
+    
+    int x;//Create a class attribute
+    int a;
+    public class Pwd{
+        private String pwd;//Private - Restricted Access
+        
+        //Getter
+        public String getPwd(){
+            return pwd;
+        }
+        
+        //Setter
+        public void setPwd(String newpwd){
+            this.pwd = newpwd;
+        }
+    }
+    
+    public ClassOne(int a){//Constructor
+        int x = 5;//Initialize Variables Here
+        int b = a;
+        System.out.println(b);
+    }
+    static void myMethod() {//Static Method
+        int y=2;//Placeholder
+    }
+    
+    public void myPublicMethod() {//Public Method
+        int z=3;//Placeholder
+    }
+    //System.out.println("hi");
+    public static void main(String[]args){//Area to run code
+        //System.out.println("Hello World");
+        ClassOne myObj = new ClassOne(2);//Calls Constructor
+        System.out.println(myObj.x);
+        
+        //Fix chunk below
+        //ClassOne.Pwd objPwd = new pwd();//Line is broken
+        //objPwd.setPwd("h290st");
+        //System.out.println(objPwd.getPwd());
+    }
+}
