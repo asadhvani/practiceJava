@@ -1,0 +1,103 @@
+public class Drive{
+    //initialize variables
+    
+   
+    int leftFront;
+    int rightFront;
+    int leftBack;
+    int rightBack;
+    
+    
+    int ljoyleft;//Make input methods into objects
+    int ljoyright;
+    int ljoyup;
+    int ljoydn;
+    int rjleft;
+    int rjright;
+    int rjup;
+    int rjdn;
+    
+    public void Objects(){
+        Drive lfront = new Drive();
+        Drive rfront = new Drive();
+        Drive lback = new Drive();
+        Drive rback = new Drive();
+        
+    }
+    
+    public void forward(){
+        
+        leftFront = 1;
+        leftBack = 1;
+        rightFront = 1;
+        rightBack = 1;
+    }
+    
+    public void backward(){
+        
+        leftFront = -1;
+        leftBack = -1;
+        rightFront = -1;
+        rightBack = -1;
+    }
+    
+    public void right(){
+      
+        leftFront=1;
+        leftBack=-1;
+        rightBack=1;
+        rightFront=-1;
+    }
+    
+    public void left(){
+       
+       leftFront=-1;
+       leftBack=1;
+       rightBack=-1;
+       rightFront=1;
+    }
+    
+    public void frontleft(){
+        
+        rightFront = 1;
+        leftBack = 1;
+    }
+    
+    public void frontright(){
+    
+        leftFront = 1;
+        rightBack = 1; 
+    }
+    
+    public void backleft(){
+    
+        leftFront=-1;
+        rightBack=-1;
+    }
+    
+    public void backright(){
+    
+        rightFront=-1;
+        leftBack=-1;
+    }
+    
+    public void turnright(){
+    
+        leftFront=1;
+        leftBack=1;
+        rightFront=-1;
+        rightBack=-1;
+    }
+    
+    public void turnleft(){
+    
+        leftFront=-1;
+        leftBack=-1;
+        rightFront=1;
+        rightBack=1;
+    }
+    
+    public static void main(String[] args){
+    
+    }
+}
