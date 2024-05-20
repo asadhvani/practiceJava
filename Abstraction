@@ -1,0 +1,17 @@
+// This is an Abstract class
+abstract class Animals {
+  //This is an Abstract method (does not have a body)
+  public abstract void animalNoise();//Body is below
+  //This is a Regular method
+  public void sleeping() {
+    System.out.println("Sleeping");
+  }
+}
+
+// Subclass (inherited from Animal)
+class Pigs extends Animals {//Use polymorphisism to access abstract class
+  public void animalNoise() {
+    // The body of animalSound() is here
+    System.out.println("The pig snorts");
+  }
+}
